@@ -73,10 +73,11 @@ function createEmployeeRecord(arr){
       }
     
       function findEmployeeByFirstName(array, name) {
-       return array.find(e => e = name)
+       return array.find(e=> e.firstName === name)
       }
     
       function calculatePayroll(array){
+        
         return array.reduce((memo, record) => {
             return memo + allWagesFor.call(record);
           }, 0);
