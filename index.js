@@ -67,6 +67,7 @@ function createEmployeeRecord(arr){
       }
     
       function wagesEarnedOnDate(dateStamp){
+        
        let hoursDaily = hoursWorkedOnDate.call(this, dateStamp);
        return hoursDaily * this.payPerHour
       }
