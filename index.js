@@ -73,7 +73,7 @@ function createEmployeeRecord(arr){
       }
     
       function findEmployeeByFirstName(array, name) {
-       return array.find(x => x = name)
+       return array.find(e => e = name)
       }
     
       function calculatePayroll(array){
