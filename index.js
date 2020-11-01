@@ -58,11 +58,11 @@ function createEmployeeRecord(arr){
     
       function hoursWorkedOnDate(dateStamp){
         
-       let inTime = this.timeInEvents.find(day => day.date ===dateStamp);
+       let inTime =this.timeInEvents.find(day => day.date === dateStamp);
        
-       let outTime = this.timeOutEvents.find(day => day.date ===dateStamp);
+       let outTime = this.timeOutEvents.find(day=> day.date ===dateStamp);
        
-       return ( outTime.hour - inTime.hour) /100;
+       return (outTime.hour -inTime.hour) /100;
        
       }
     
