@@ -78,7 +78,7 @@ function createEmployeeRecord(arr){
     
       function calculatePayroll(array){
         
-        return array.reduce((memo, record) => {
-            return memo + allWagesFor.call(record);
+        return array.reduce((acc, curr) => {
+            return acc + allWagesFor.call(curr);
           }, 0);
       }
